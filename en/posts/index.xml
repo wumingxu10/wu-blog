@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on blog</title>
+    <title>Posts on wumingxu</title>
     <link>https://www.wumingxu.online/en/posts/</link>
-    <description>Recent content in Posts on blog</description>
+    <description>Recent content in Posts on wumingxu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 10 Apr 2024 11:17:47 +0800</lastBuildDate><atom:link href="https://www.wumingxu.online/en/posts/index.xml" rel="self" type="application/rss+xml" />
