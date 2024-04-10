@@ -1,7 +1,7 @@
 # ------------------------------------- #
 # ---- General Settings --------------- #
 # ------------------------------------- #
-baseURL = "https://wumingxu10.github.io"
+baseURL = "https://www.wumingxu.online"
 title = "blog"
 theme = "hugo-theme-den"
 #enableRobotsTXT = true       # generate robots.txt
