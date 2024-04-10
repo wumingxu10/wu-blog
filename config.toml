@@ -2,7 +2,7 @@
 # ---- General Settings --------------- #
 # ------------------------------------- #
 baseURL = "https://www.wumingxu.online"
-title = "blog"
+title = "wumingxu"
 theme = "hugo-theme-den"
 #enableRobotsTXT = true       # generate robots.txt
 enableEmoji = true           # use emoji support
@@ -29,7 +29,7 @@ disqusShortname = ""         # disqus_shortname
 googleAnalytics = ""         # UA-XXXXXXXX-X
 
 # language support # en / zh-tw / other... translations present in i18n/
-defaultContentLanguage = "en"           # Default language to use
+defaultContentLanguage = "zh"           # Default language to use
 defaultContentLanguageInSubdir = true
 
 # Links format
@@ -40,7 +40,7 @@ defaultContentLanguageInSubdir = true
   pages = "/:slug/"
 
 [author]                     # required
-  name = "Jane Doe"
+  name = "wu mingxu"
 
 [sitemap]                    # required
   changefreq = "weekly"
@@ -52,15 +52,15 @@ defaultContentLanguageInSubdir = true
 # ------------------------------------- #
 
 [params]
-  since = "2017"             # Site creation time
+  since = "2024"             # Site creation time
   rssFullContent = true      # set true to use full content instead of summary
 
   # site info (optional)
   keywords = ["Hugo", "theme","den"]
-  description = "A simple theme for Hugo"
-  logoTitle = "Den" # shown on top-left, default: title
+  description = "Hello World :)"
+  logoTitle = "wumingxu" # shown on top-left, default: title
   siteLogoImage = "images/globe.svg"     # shown besides logoTitle
-  # headerTitle = "Den"                   # default: title
+  # headerTitle = "wumingxu"                   # default: title
   headerImage = "images/background.jpg"
   showAuthorCard = true # Whether to show author information below the article
 
@@ -120,51 +120,63 @@ defaultContentLanguageInSubdir = true
     identifier = "notes"
     url = "category/notes/"
   [[languages.en.menu.main]]
-    name = "Demos"
+    name = "Develop"
     weight = 20
-    identifier = "demos"
-    url = "category/demos/"
+    identifier = "develop"
+    url = "category/develop/"
 
   [[languages.en.menu.social]]
     name = "GitHub"
     weight = 10
     identifier = "github"
-    url = "https://github.com/shaform/hugo-theme-den/"
+    url = "https://github.com/wumingxu10"
 
   [[languages.en.menu.links]]
-    name = "About Me"
+    name = "Blog"
     weight = 10
-    identifier = "about-me"
-    url = "https://github.com/shaform/hugo-theme-den/"
+    identifier = "Blog"
+    url = "https://www.wumingxu.online"
 
-[languages.zh-tw]
-  languageCode = "zh-tw"
-  languageName = "繁體中文"
-  contentDir = "content/zh-tw"
+  [[languages.zh.menu.links]]
+    name = "Code"
+    weight = 10
+    identifier = "code"
+    url = "https://code.wumingxu.online"
+
+[languages.zh]
+  languageCode = "zh"
+  languageName = "中文"
+  contentDir = "content/zh"
   weight = 2
 
-  [languages.zh-tw.params]
-    description = "一個簡單的佈景。"
+  [languages.zh.params]
+    description = "Hello World :)"
 
-  [[languages.zh-tw.menu.main]]
-    name = "筆記"
+  [[languages.zh.menu.main]]
+    name = "笔记"
     weight = 10
     identifier = "notes"
     url = "category/notes/"
-  [[languages.zh-tw.menu.main]]
-    name = "展示"
+  [[languages.zh.menu.main]]
+    name = "开发"
     weight = 20
-    identifier = "demos"
-    url = "category/demos/"
+    identifier = "develop"
+    url = "category/develop/"
 
-  [[languages.zh-tw.menu.social]]
+  [[languages.zh.menu.social]]
     name = "GitHub"
     weight = 10
     identifier = "github"
-    url = "https://github.com/shaform/hugo-theme-den/"
+    url = "https://github.com/wumingxu10"
 
-  [[languages.zh-tw.menu.links]]
-    name = "關於我"
+  [[languages.zh.menu.links]]
+    name = "Blog"
     weight = 10
-    identifier = "about-me"
-    url = "https://github.com/shaform/hugo-theme-den/"
+    identifier = "blog"
+    url = "https://www.wumingxu.online"
+
+  [[languages.zh.menu.links]]
+    name = "Code"
+    weight = 10
+    identifier = "code"
+    url = "https://code.wumingxu.online"
