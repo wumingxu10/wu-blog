@@ -1,43 +1,131 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:webfeeds="http://webfeeds.org/rss/1.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>wumingxu</title>
-    <link>https://www.wumingxu.online/zh/</link>
-    <description>Recent content on wumingxu</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language>
-    <lastBuildDate>Sun, 03 Mar 2024 16:01:23 +0800</lastBuildDate>
-    
-    <atom:link href="https://www.wumingxu.online/zh/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>關於</title>
-      <link>https://www.wumingxu.online/zh/about/</link>
-      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+<!DOCTYPE html>
+<html lang="zh" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta name="generator" content="Hugo 0.105.0" />
+  <meta charset="utf-8">
+  <title>nxp mpc5744 gitlab-ci自动构建 · wumingxu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="该文档通过gitlab-runner搭建nxp mpc5744自动构建功能。 编译环境搭建 编译方案 nxp s32ds 基于eclipse二次开发，所以无论是S3" />
+
+  <meta name="keywords" content="Hugo, theme, den" />
+
+<link rel="canonical" href="https://www.wumingxu.online/zh/2024/03/03/nxp-mpc5744-gitlab-ci%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA/" />
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.wumingxu.online/css/den.css">
+
+
+
+
+<meta property="og:title" content="nxp mpc5744 gitlab-ci自动构建" />
+<meta property="og:description" content="该文档通过gitlab-runner搭建nxp mpc5744自动构建功能。 编译环境搭建 编译方案 nxp s32ds 基于eclipse二次开发，所以无论是S3" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.wumingxu.online/zh/2024/03/03/nxp-mpc5744-gitlab-ci%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-03T16:01:23+08:00" />
+<meta property="article:modified_time" content="2024-03-03T16:01:23+08:00" />
+
+<meta itemprop="name" content="nxp mpc5744 gitlab-ci自动构建">
+<meta itemprop="description" content="该文档通过gitlab-runner搭建nxp mpc5744自动构建功能。 编译环境搭建 编译方案 nxp s32ds 基于eclipse二次开发，所以无论是S3"><meta itemprop="datePublished" content="2024-03-03T16:01:23+08:00" />
+<meta itemprop="dateModified" content="2024-03-03T16:01:23+08:00" />
+<meta itemprop="wordCount" content="1205">
+<meta itemprop="keywords" content="notes," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="nxp mpc5744 gitlab-ci自动构建"/>
+<meta name="twitter:description" content="该文档通过gitlab-runner搭建nxp mpc5744自动构建功能。 编译环境搭建 编译方案 nxp s32ds 基于eclipse二次开发，所以无论是S3"/>
+</head>
+<body>
+  
+  <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://www.wumingxu.online/images/background.jpg'); background-position: center; background-size: cover;">
+  <div class="container">
+  <nav class="header-nav navbar navbar-expand-md navbar-dark light-dark">
+    <div class="header-logo navbar-brand">
       
-      <guid>https://www.wumingxu.online/zh/about/</guid>
-      <description>Hugo 是個靜態網頁產生器。 它利用了一些開放原始碼的專案像是： Cobra Viper J Walter Weatherman Cast 了解並貢獻： GitHub.</description>
-      <content:encoded><![CDATA[<p>Hugo 是個靜態網頁產生器。</p>
-<p>它利用了一些開放原始碼的專案像是：</p>
-<ul>
-<li><a href="https://github.com/spf13/cobra">Cobra</a></li>
-<li><a href="https://github.com/spf13/viper">Viper</a></li>
-<li><a href="https://github.com/spf13/jWalterWeatherman">J Walter Weatherman</a></li>
-<li><a href="https://github.com/spf13/cast">Cast</a></li>
-</ul>
-<p>了解並貢獻： <a href="https://github.com/gohugoio">GitHub</a>.</p>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>nxp mpc5744 gitlab-ci自动构建</title>
-      <link>https://www.wumingxu.online/zh/2024/03/03/nxp-mpc5744-gitlab-ci%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA/</link>
-      <pubDate>Sun, 03 Mar 2024 16:01:23 +0800</pubDate>
+        <a class="float-left" href="https://www.wumingxu.online/zh/">
       
-      <guid>https://www.wumingxu.online/zh/2024/03/03/nxp-mpc5744-gitlab-ci%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA/</guid>
-      <description>该文档通过gitlab-runner搭建nxp mpc5744自动构建功能。 编译环境搭建 编译方案 nxp s32ds 基于eclipse二次开发，所以无论是S3</description>
-      <content:encoded><![CDATA[<p>该文档通过gitlab-runner搭建nxp mpc5744自动构建功能。</p>
+        
+        <img class="mr20 header-logo-image" src="https://www.wumingxu.online/images/globe.svg" alt="logo">
+        
+        
+          wumingxu
+         
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="nav-menu collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
+          <li class="nav-item">
+            
+              
+                <a class="nav-link" href="https://www.wumingxu.online/zh/category/notes/">笔记</a>
+              
+            
+          </li>
+        
+          <li class="nav-item">
+            
+              
+                <a class="nav-link" href="https://www.wumingxu.online/zh/category/develop/">开发</a>
+              
+            
+          </li>
+        
+          <li class="nav-item">
+            
+              <a class="nav-link" href="https://www.wumingxu.online/zh/about/">關於</a>
+            
+          </li>
+        
+        
+          
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.wumingxu.online/en/"><i class="fas fa-globe"></i> English</a>
+            </li>
+          
+          
+          
+          
+        
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div class="container header-wrapper">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="header-content">
+        <h1 class="header-title">nxp mpc5744 gitlab-ci自动构建</h1>
+        <p class="header-date">
+          wumingxu /
+        
+        2024-03-03
+          / 
+          <a href="https://www.wumingxu.online/zh/category/notes/">Notes</a>
+        </p>
+        
+        <div class="header-underline"></div>
+        
+          <div class="clearfix"></div>
+          <p class="float-right header-tags">
+              <i class="fas fa-tags" aria-hidden="true"></i>
+              <a href="https://www.wumingxu.online/zh/tag/notes/">notes</a>
+          </p>
+        
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <main>
+<div class="container content">
+  <article>
+  <p>该文档通过gitlab-runner搭建nxp mpc5744自动构建功能。</p>
 <h1 id="编译环境搭建">编译环境搭建</h1>
 <ul>
 <li><strong>编译方案</strong></li>
@@ -199,63 +287,82 @@
 <p><img src="./image/6.png" alt=""></p>
 </li>
 </ul>
-]]></content:encoded>
-    </item>
+
+  </article>
+
+  
+  
     
-    <item>
-      <title>標頭圖片</title>
-      <link>https://www.wumingxu.online/zh/2018/03/05/%E6%A8%99%E9%A0%AD%E5%9C%96%E7%89%87/</link>
-      <pubDate>Mon, 05 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://www.wumingxu.online/zh/2018/03/05/%E6%A8%99%E9%A0%AD%E5%9C%96%E7%89%87/</guid>
-      <description>這是一個簡單的筆記。</description>
-      <content:encoded><![CDATA[<p>這是一個簡單的筆記。</p>
-]]></content:encoded>
-    </item>
     
-    <item>
-      <title>筆記 2</title>
-      <link>https://www.wumingxu.online/zh/2018/03/04/%E7%AD%86%E8%A8%98-2/</link>
-      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://www.wumingxu.online/zh/2018/03/04/%E7%AD%86%E8%A8%98-2/</guid>
-      <description>這是一個簡單的筆記。</description>
-      <content:encoded><![CDATA[<p>這是一個簡單的筆記。</p>
-]]></content:encoded>
-    </item>
     
-    <item>
-      <title>筆記 1</title>
-      <link>https://www.wumingxu.online/zh/2018/03/03/%E7%AD%86%E8%A8%98-1/</link>
-      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://www.wumingxu.online/zh/2018/03/03/%E7%AD%86%E8%A8%98-1/</guid>
-      <description>這是一個簡單的筆記。</description>
-      <content:encoded><![CDATA[<p>這是一個簡單的筆記。</p>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.wumingxu.online/zh/1/01/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.wumingxu.online/zh/1/01/01/</guid>
-      <description>编译方案 自己重新写一份makefile，通过gcc编译 耗时，多人开发时还需额外维护makefile 不能直接通过s32ds导入后直接编译 基于s</description>
-      <content:encoded><![CDATA[<h1 id="编译方案">编译方案</h1>
-<h2 id="自己重新写一份makefile通过gcc编译">自己重新写一份makefile，通过gcc编译</h2>
-<ul>
-<li>耗时，多人开发时还需额外维护makefile</li>
-<li>不能直接通过s32ds导入后直接编译</li>
-</ul>
-<h2 id="基于s32ds自动生成makefile编译">基于s32ds，自动生成makefile编译</h2>
-<ul>
-<li>windows、linux下都有s32ds安装包</li>
-<li>可直接调用命令导入s32ds项目后直接编译，makefile有s32ds接管</li>
-<li>可打包成docker image</li>
-</ul>
-]]></content:encoded>
-    </item>
-    
-  </channel>
-</rss>
+  
+  
+
+
+</div>
+
+  </main><div class="footer gradient-2">
+  <div class="container footer-container ">
+    <div class="row">
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        <div class="footer-title"></div>
+        <ul class="list-unstyled">
+            
+              
+                <li><a href="https://www.wumingxu.online/zh/tags/"></a></li>
+              
+              
+                <li><a href="https://www.wumingxu.online/zh/categories/"></a></li>
+              
+            
+            
+            
+            <li><a rel="alternate" type="application/rss&#43;xml" href="https://www.wumingxu.online/zh/index.xml"><i class="fas fa-rss-square"></i> </a></li>
+            
+            
+            
+        </ul>
+      </div>
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        
+        <div class="footer-title"></div>
+        <ul class="list-unstyled">
+          
+          <li><a href="https://github.com/wumingxu10" rel="noopener" target="_blank">GitHub</a></li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        
+        <div class="footer-title"></div>
+        <ul class="list-unstyled">
+          
+          <li><a href="https://www.wumingxu.online" rel="noopener" target="_blank">Blog</a></li>
+          
+          <li><a href="https://code.wumingxu.online" rel="noopener" target="_blank">Code</a></li>
+          
+        </ul>
+        
+      </div> 
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <p class="pull-right text-right">
+          <small><em>Proudly powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a></em></small><br/>
+          <small><em>Theme - <a href="https://github.com/shaform/hugo-theme-den" rel="noopener" target="_blank">Den</a></em></small><br/>
+          <small>
+            &copy; 
+            wu mingxu
+            2024
+          </small>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
