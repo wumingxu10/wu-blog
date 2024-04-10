@@ -30,6 +30,6 @@ jobs:
               with:
                   PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
                   EXTERNAL_REPOSITORY: wumingxu10/wumingxu10.github.io
-                  PUBLISH_BRANCH: main
+                  PUBLISH_BRANCH: cf-pages
                   PUBLISH_DIR: ./public
                   commit_message: ${{ github.event.head_commit.message }}
