@@ -8,13 +8,14 @@ categories: ["Notes"]
 authors:
 - wumingxu
 ---
+
 该文档通过gitlab-runner搭建nxp mpc5744自动构建功能。
 
 # 编译环境搭建
 
 - **编译方案**
 
-![编译方案](./image/1.png)
+![编译方案](https://cdn.jsdelivr.net/gh/wumingxu10/wu-image/1.png)
 
 nxp s32ds 基于eclipse二次开发，所以无论是S32 Design Studio for Power Architecture Version 2(后面简称上s32ds_pa_ide)还是其他架构版本的都是可以通过命令行对项目进行编译，为了方便在服务器上部署，所以**本方案选择将s32ds_pa_ide做成docker image**。
 
@@ -24,7 +25,7 @@ nxp s32ds 基于eclipse二次开发，所以无论是S32 Design Studio for Power
 
   - 下载linux安装包并根据安装指导书在自己的虚拟机上完成ide安装
 
-    ![](./image/2.png)
+    ![](https://cdn.jsdelivr.net/gh/wumingxu10/wu-image/2.png)
 
   - 将整个s32ds_pa_ide打包成压缩包S32DS_Power_v2.1.tar.gz，并上传服务器，与Dockerfile同级目录
 
@@ -71,7 +72,7 @@ nxp s32ds 基于eclipse二次开发，所以无论是S32 Design Studio for Power
 
 - 获取gitlab-runner register 的url、token
 
-![](./image/3.png)
+![](https://cdn.jsdelivr.net/gh/wumingxu10/wu-image/3.png)
 
 - 根据自己的要求修改/etc/gitlab-runner挂载到宿主机的路径，并修改url、token后执行
 
@@ -164,9 +165,9 @@ build: # 编译阶段
 
 - gitlab ci/cd 变量设定取决于s32ds ide里具体的工程名及配置
 
-  ![](./image/4.png)
+  ![](https://cdn.jsdelivr.net/gh/wumingxu10/wu-image/4.png)
 
-![](./image/5.png)
+![](https://cdn.jsdelivr.net/gh/wumingxu10/wu-image/5.png)
 
 PROJECT_NAME  对应  boot_mpc5744
 
@@ -174,4 +175,4 @@ PROJECT_CFG  对应  Debug_FLASH
 
 - 下载编译产物
 
-  ![](./image/6.png)
+  ![](https://cdn.jsdelivr.net/gh/wumingxu10/wu-image/6.png)
