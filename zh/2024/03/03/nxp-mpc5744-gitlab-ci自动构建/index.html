@@ -130,7 +130,7 @@
 <ul>
 <li><strong>编译方案</strong></li>
 </ul>
-<p><img src="./image/1.png" alt="编译方案"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wumingxu10/wu-image/1.png" alt="编译方案"></p>
 <p>nxp s32ds 基于eclipse二次开发，所以无论是S32 Design Studio for Power Architecture Version 2(后面简称上s32ds_pa_ide)还是其他架构版本的都是可以通过命令行对项目进行编译，为了方便在服务器上部署，所以<strong>本方案选择将s32ds_pa_ide做成docker image</strong>。</p>
 <ul>
 <li>
@@ -141,7 +141,7 @@
 <ul>
 <li>
 <p>下载linux安装包并根据安装指导书在自己的虚拟机上完成ide安装</p>
-<p><img src="./image/2.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wumingxu10/wu-image/2.png" alt=""></p>
 </li>
 <li>
 <p>将整个s32ds_pa_ide打包成压缩包S32DS_Power_v2.1.tar.gz，并上传服务器，与Dockerfile同级目录</p>
@@ -184,7 +184,7 @@
 <ul>
 <li>获取gitlab-runner register 的url、token</li>
 </ul>
-<p><img src="./image/3.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wumingxu10/wu-image/3.png" alt=""></p>
 <ul>
 <li>
 <p>根据自己的要求修改/etc/gitlab-runner挂载到宿主机的路径，并修改url、token后执行</p>
@@ -275,16 +275,16 @@
 </span></span></span></code></pre></div><ul>
 <li>
 <p>gitlab ci/cd 变量设定取决于s32ds ide里具体的工程名及配置</p>
-<p><img src="./image/4.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wumingxu10/wu-image/4.png" alt=""></p>
 </li>
 </ul>
-<p><img src="./image/5.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wumingxu10/wu-image/5.png" alt=""></p>
 <p>PROJECT_NAME  对应  boot_mpc5744</p>
 <p>PROJECT_CFG  对应  Debug_FLASH</p>
 <ul>
 <li>
 <p>下载编译产物</p>
-<p><img src="./image/6.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wumingxu10/wu-image/6.png" alt=""></p>
 </li>
 </ul>
 

@@ -43,14 +43,5 @@
       <description>這是一個簡單的筆記。</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>https://www.wumingxu.online/zh/1/01/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.wumingxu.online/zh/1/01/01/</guid>
-      <description>编译方案 自己重新写一份makefile，通过gcc编译 耗时，多人开发时还需额外维护makefile 不能直接通过s32ds导入后直接编译 基于s</description>
-    </item>
-    
   </channel>
 </rss>
